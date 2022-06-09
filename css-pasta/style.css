@@ -1,0 +1,893 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    
+    border: none !important;
+    
+}
+/* -------------------------------------- visao geral--------------------------- */
+.center{
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+.divBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn, .btn-telaMenor{
+    width: 300px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+
+    font-size: 20px;
+    color: #fff;
+    background-color: #08aa9f73;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: .5s;  
+}
+.btn:hover{
+    box-shadow: 0 0 15px 5px #08aa9f73;
+}
+
+.logo h1{
+    color: #fff;
+    font-weight: 300;
+}
+
+.tituloSessao{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+
+    font-size: 40px;
+}
+/* --------------------------------------fim visao geral--------------------------- */
+
+
+body{
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ---------------------------------header---------------------- */
+header{
+    background-color: #08aa9f73;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .center{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .center .logo{
+    color: #fff;
+    font-weight: 300;
+}
+
+/* -----------------------------------------header-------------------------- */
+
+/* ------------------------------container topo -------------------------- */
+.container{
+    height: 700px;
+    width: 100%;
+    background-color: #08aa9f73;
+    background-image: url('/imagem/capa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    float: left;
+   
+    margin-bottom: 30px;
+}
+
+.container .divTitulo-subtitulo h1{
+    margin-top: 150px;
+    width: 400px;
+    font-size: 50px;
+
+    text-shadow: 0 0 5px #08aa9f9f;
+    color: #FFFFFF;
+}
+
+.container .divTitulo-subtitulo h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 0 5px #08aa9f9f;
+}
+
+.container .center .divBtn{
+    margin-top: 40px;
+    justify-content: end;
+}
+
+/* ------------------------------fim container topo -------------------------- */
+
+/* ----------------------------------sobre------------------------------------ */
+/* -----------------como trabalhamos-------------- */
+.sobre{
+    clear: both;
+}
+ .texto-imagem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+ .texto-imagem .texto{
+    max-width: 573px;
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .texto-imagem img{
+    width: 537px;
+    height: 277px;
+    object-fit: cover;
+
+    border-radius: 25px;
+}
+/* -----------------fim como trabalhamos-------------- */
+
+/* ------------------nosso espaço-------------------- */
+.texto-imagem.segundo{
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.texto-imagem.segundo .texto{
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.texto-imagem.segundo .texto p{
+    margin-bottom: 30px;
+    text-align: justify;
+
+}
+
+/* --------------------botões sobre */
+.texto-imagem.segundo .btn-telaMenor{
+    display: none;
+}/* fim botões sobre-------------------- */
+
+/* ------------------fim nosso espaço----------------- */
+/* ----------------------------------fim sobre------------------------------------ */
+
+
+/* -----------------------------------outros servicos----------------------------- */
+.outrosServicos .center .box-imagem-texto{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.outrosServicos .center .box-imagem-texto .imagem-texto{
+    position: relative;
+    display: inline-block;
+}
+
+.outrosServicos .center .box-imagem-texto .imagem-texto img{
+    height: 280px;
+    width: 374px;
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    box-shadow: 10px 10px 10px 5px rgb(88, 88, 88, .8);
+}
+
+.outrosServicos .center .box-imagem-texto .imagem-texto p{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 5px 10px;
+
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 0 5px #000;
+
+    border-radius: 20px;
+
+    box-shadow: inset 0 0 15px 5px #08aa9f73;
+}
+/* -----------------------------------fim outros servicos----------------------------- */
+
+/* -------------------------------nossa equipe ------------------------ */
+
+.equipe .center .doutores{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.equipe .center .doutores .doutor{
+    width: 276px;
+    height: 386px;
+    position: relative;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 10px 7px 15px 2px rgb(107, 107, 107);
+}
+
+.equipe .center .doutores .doutor img{
+    height: 100%;
+    width: 100%;
+}
+
+.equipe .center .doutores .doutor .nome{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 0 0 5px #08aa9f9f;
+
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ------------------------------fim nosso time ------------------------ */
+
+
+/* ------------------------------mapa ------------------------ */
+
+
+.sessaoMapa .center{
+    border: none;
+}
+.sessaoMapa .center h1{
+    font-weight: 300;
+    text-align: start;
+}
+.sessaoMapa .center .imagemMapa{
+    height: 480px;
+    max-width: 100%;
+    background-image: url('/imagem/mapa.PNG');
+    background-size: cover;
+}
+
+/* ------------------------------fim mapa ------------------------ */
+
+
+/* ------------------------------email ------------------------ */
+.sessaoEmail{
+    margin-top: 30px;
+}
+
+.sessaoEmail .center h1{
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sessaoEmail .center h3{
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+}
+
+.sessaoEmail .center form{
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 800px;
+    padding: 18px;
+    box-shadow: 0 0 15px 5px rgb(189, 189, 189);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.sessaoEmail .center label{
+    font-size: 20px;
+}
+
+.sessaoEmail .center input[type="text"],
+.sessaoEmail .center input[type="email"],
+.sessaoEmail .center textarea{
+    padding-left: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(235, 235, 235);
+
+    font-size: 20px;
+}
+
+.sessaoEmail .center input[type="text"],
+.sessaoEmail .center input[type="email"]{
+    height: 30px;
+}
+
+.sessaoEmail .center textarea{
+    height: 150px;
+}
+
+.sessaoEmail .center input[type="button"]{
+    width: 150px;
+    height: 40px;
+    margin-bottom: 15px;
+
+    font-size: 20px;
+    color: #fff;
+    background-color: #08aa9fda;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: .5s;
+
+    border: none;
+}
+
+.sessaoEmail .center input[type="button"]:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 5px #08aa9f73;
+}
+
+/* ------------------------------fim email ------------------------ */
+
+/* ------------------------------ preço ------------------------ */
+.precoConsulta{
+    margin-top: 30px;
+}
+
+.precoConsulta .boxPreco .consultaPreco{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+
+    border: 1px solid black;
+}
+
+.precoConsulta .boxPreco .consultaPreco p{
+    font-size: 30px;
+}
+
+.precoConsulta .boxPreco .consultaPreco span{
+    color: #08aa9fda;
+}
+/* ------------------------------fim preço ------------------------ */
+
+
+/* ------------------------------ rodapé ------------------------ */
+
+footer{
+    margin-top: 50px;
+    height: 550px;
+    background-image: url('/imagem/rodape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+footer .redesSociais{
+    width: 300px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+footer .redesSociais a{
+    padding: 6px 12px;
+    
+
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+
+    font-size: 20px;
+    color: #fff;
+
+    transition: .5s;
+}
+
+footer .redesSociais a:hover{
+    transform: scale(1.2);
+}
+
+footer .redesSociais a i{
+    margin-left: 5px;
+}
+
+footer .redesSociais .whatsapp{
+    background-color: #02DD4F;
+}
+
+footer .redesSociais .instagram{
+    background-image: linear-gradient(45deg, #f58529, #feda77, #dd2a7b, #8134af, #515bd4);
+}
+
+footer .redesSociais .facebook{
+    background-color: #0164E0;
+}
+
+footer .creditos{
+    height: 50px;
+
+    background-color: #6F7072;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+    box-shadow: 0 5px 8px 14px #6F7072;
+}
+/* ------------------------------fim rodapé ------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------- media query --------------------------- */
+
+@media screen and (max-width: 1600px){
+    .center{
+        margin: 0 100px 0 100px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .container{
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .center{
+        margin: 0 75px 0 75px;
+    }
+}
+
+@media screen and (max-width: 1115px){
+    .center{
+        margin: 0 75px 0 75px;
+    }
+    /* ---------------------------------header---------------------- */
+    header{
+        background-color: #08aa9f73;
+    }
+
+    header .center{
+        height: 50px;
+    }
+
+    header .center .logo{
+        color: #fff;
+        font-size: 15px;
+    }
+
+/* ---------------barra de navegação */
+    header .center .navbar{
+        display: flex;
+
+        height: 100%;
+    }
+
+    header .center .navbar li {
+        margin-left: 20px;
+        height: 100%;
+        
+        display: flex;
+        align-items: center;
+    }
+
+    header .center .navbar li a{
+        padding: 5px 10px;
+        font-size: 15px;
+
+        border-radius: 30px;
+
+        color: aliceblue;
+        transition: .5s;
+        
+
+    }
+
+/* ---------------barra de navegação */
+/* -----------------------------------------header-------------------------- */
+
+/* ------------------------------container topo -------------------------- */
+    .container{
+        height: 600px;
+    }
+
+    .container .divTitulo-subtitulo h1{
+        margin-top: 100px;
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 990px){
+
+    .center{
+        margin: 0 50px 0 50px;
+    }
+    
+    header{
+        background-color: #08aa9f73;
+    }
+
+    header .center{
+        height: 50px;
+    }
+
+    header .center .logo{
+        font-size: 15px;
+        color: #fff;
+    }
+
+/* ---------------barra de navegação */
+
+    header .center .navbar li a{
+        padding: 5px 10px;
+        font-size: 15px;
+
+        border-radius: 30px;
+
+        color: aliceblue;
+        transition: .5s;
+        
+
+    }
+/* ---------------barra de navegação */
+/* -----------------------------------------header-------------------------- */
+
+/* ------------------------------container topo -------------------------- */
+    .container{
+        height: 450px;
+    }
+
+    .container .divTitulo-subtitulo h1{
+        margin-top: 80px;
+        margin-bottom: 20px;
+        max-width: 450px;
+        font-size: 30px;
+        
+    }
+
+    .container .divTitulo-subtitulo h3{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: #fff;
+        text-shadow: 0 0 5px #08aa9f9f;
+    }
+
+    
+/* ----------------------------------sobre------------------------------------ */
+/* -----------------como trabalhamos-------------- */
+    .texto-imagem{
+        margin-bottom: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .texto-imagem .texto{
+        max-width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto-imagem .texto h1{
+        text-align: center;
+    }
+
+    .texto-imagem .texto p{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .texto-imagem img{
+        width: 437px;
+    }
+    /* -----------------fim como trabalhamos-------------- */
+
+    /* ------------------nosso espaço-------------------- */
+    .texto-imagem.segundo{
+        flex-direction: column;
+    }
+
+    .texto-imagem.segundo .texto{
+        margin-right: 0;
+        margin-left: 0px;
+    }
+
+    .texto-imagem.segundo .texto p{
+        margin-bottom: 0px;
+        text-align: center;
+
+    }
+
+    .texto-imagem.segundo .texto .divBtn .btn{
+        display: none;
+    }
+
+    .sobre .center .texto-imagem.segundo .btn-telaMenor{
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        color: #fff;
+        background-color: #08aa9f73;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: .5s;
+    }
+
+    .sobre .center .texto-imagem.segundo .btn-telaMenor:hover{
+        box-shadow: 0 0 15px 5px #08aa9f73;
+    }
+
+    .sobre .center .texto-imagem.segundo .btn-telaMenor .fa-whatsapp{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+/* ------------------fim nosso espaço----------------- */
+
+/* ----------------------------------fim sobre------------------------------------ */
+
+/* -------------------------------outros serviços--------------------------- */
+    .outrosServicos .center .box-imagem-texto .imagem-texto {
+        width: 100%;
+    }
+    .outrosServicos .center .box-imagem-texto .imagem-texto img{
+        height: 180px;
+        width: 100%;
+    }
+/* -------------------------------fim outros serviços--------------------------- */    
+
+/* ------------------equipe---------------- */
+
+    .equipe .center .doutores .doutor{
+        width: 180px;
+        height: 276px;
+    }
+
+/* --------------fim equipe ----------------- */
+/* ------------------------------ preço ------------------------ */
+    .precoConsulta .boxPreco .consultaPreco p{
+        font-size: 25px;
+    }
+
+/* ------------------------------fim preço ------------------------ */
+
+}
+
+@media screen and (max-width: 580px) {
+    header .center .navbar{
+        display: none;
+    }
+
+    .tituloSessao{
+        font-size: 30px;
+    }
+/* ---------------- sobre ----------------- */
+    .texto-imagem img{
+        height: 177px;
+        width: calc(100% - 10px);
+    }
+/* ----------------fim sobre ----------------- */
+
+/* ------------------------------ preço ------------------------ */
+    .precoConsulta .boxPreco .consultaPreco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+
+        border: 1px solid black;
+    }
+/* ------------------------------fim preço ------------------------ */
+}
+
+@media screen and (max-width: 480px) {
+    
+    .center{
+        margin: 0 25px 0 25px;
+    }
+    
+    header{
+        background-color: #08aa9f73;
+    }
+
+    header .center{
+        height: 50px;
+    }
+
+    header .center .logo{
+        font-size: 15px;
+        color: #fff;
+    }
+
+
+/* -----------------------------------------header-------------------------- */
+
+/* ------------------------------container topo -------------------------- */
+    .container{
+        height: 450px;
+    }
+    .container .center{
+        height: 100%;
+    }
+
+    .container .center .divTitulo-subtitulo h1{
+        margin-top: 60px;
+        margin-bottom: 15px;
+
+        width: 100%;
+
+        font-size: 30px;
+        text-align: center;
+        
+    }
+
+    .container .center .divTitulo-subtitulo h3{
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        color: #fff;
+        text-shadow: 0 0 5px #08aa9f9f;
+        text-align: center;
+    }
+
+    .container .center .divBtn{
+        justify-content: center;
+    }
+
+    .container .center .divBtn .btn{
+        font-size: 18px;
+    }
+
+    /* --------------------------fim container--------------------- */
+
+    /* --------------------------sobre----------------------- */
+    .sobre .center .texto-imagem.segundo .btn-telaMenor{
+        width: calc(100% - 10px);
+        font-size: 16px;
+    }
+    /* --------------------------fim sobre----------------------- */
+
+}
+
+@media screen and (max-width: 350px) {
+    .center{
+        margin: 0 20px 0 20px;
+    }
+
+    header .center{
+        height: 40px;
+    }
+
+    header .center .logo{
+        font-size: 15px;
+        color: #fff;
+    }
+
+/* -----------------------------------------header-------------------------- */
+
+/* ------------------------------container topo -------------------------- */
+    .container{
+        height: 400px;
+    }
+    .container .center{
+        height: 100%;
+    }
+
+    .container .center .divTitulo-subtitulo h1{
+        margin-top: 50px;
+        margin-bottom: 5px;
+
+        font-size: 25px;
+        
+    }
+
+    .container .center .divTitulo-subtitulo h3{
+        margin-top: 10px;
+
+        font-weight: 200;
+    }
+/* ------------------------------fim container topo -------------------------- */
+
+/* ----------------------preco-------------------- */
+    .precoConsulta .boxPreco .consultaPreco p{
+        font-size: 20px;
+    }
+/* ----------------------fim preco-------------------- */
+
+}
+
+@media screen and (max-width: 320px) {
+    .container{
+        height: 450px;
+    }
+}
