@@ -94,7 +94,7 @@ header .center .logo{
     height: 700px;
     width: 100%;
     background-color: #08aa9f73;
-    background-image: url('/imagem/capa.jpg');
+    background-image: url('https://jonatham-malaquias.github.io/psicologuia/imagem/capa.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -390,7 +390,7 @@ header .center .logo{
 footer{
     margin-top: 50px;
     height: 550px;
-    background-image: url('/imagem/rodape.jpg');
+    background-image: url('https://jonatham-malaquias.github.io/psicologuia/imagem/rodape.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
