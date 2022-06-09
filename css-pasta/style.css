@@ -277,7 +277,7 @@ header .center .logo{
 .sessaoMapa .center .imagemMapa{
     height: 480px;
     max-width: 100%;
-    background-image: url('/imagem/mapa.PNG');
+    background-image: url('https://jonatham-malaquias.github.io/psicologuia/imagem/mapa.PNG');
     background-size: cover;
 }
 
